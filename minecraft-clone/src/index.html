@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minecraft Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/textures/atlas.png" as="image">
+    <link rel="preload" href="js/main.js" as="script">
+</head>
+
+<body>
+    <div id="crosshair"></div>
+    <div id="loading">
+        <div class="spinner"></div>
+        <div>Generating world...</div>
+    </div>
+    <div id="pointerLockMessage">
+        Click to play!<br>
+        (WASD to move, SPACE to jump)
+    </div>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.skypack.dev/three@0.136.0",
+            "simplex-noise": "https://cdn.jsdelivr.net/npm/simplex-noise@3.0.1/dist/esm/simplex-noise.js"
+        }
+    }
+    </script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
